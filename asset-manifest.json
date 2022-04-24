@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c2f4eaf4.css",
+    "main.js": "/static/js/main.8a997273.js",
+    "static/js/787.0f51b28a.chunk.js": "/static/js/787.0f51b28a.chunk.js",
+    "static/media/top-img.svg": "/static/media/top-img.686ac6491ff5cefa08af.svg",
+    "static/media/noise.png": "/static/media/noise.27a0d9efc30594badb01.png",
+    "static/media/Urbanist-Medium.ttf": "/static/media/Urbanist-Medium.db343645c0455ac2b2d6.ttf",
+    "static/media/Urbanist-Black.ttf": "/static/media/Urbanist-Black.950202e856b8d9a43b8c.ttf",
+    "static/media/Urbanist-Bold.ttf": "/static/media/Urbanist-Bold.4ef2241a660d522fefaa.ttf",
+    "static/media/logo.svg": "/static/media/logo.d49cb48a0674ffad0659be19a2442961.svg",
+    "static/media/logo-footer.svg": "/static/media/logo-footer.f21edb68640dd5ecd30a6c39830317aa.svg",
+    "static/media/about-bg.svg": "/static/media/about-bg.ced2d7782104a98191f5.svg",
+    "static/media/w1.svg": "/static/media/w1.20756a2df8a99f60ff850edb08ee9a27.svg",
+    "static/media/GitHub.svg": "/static/media/GitHub.178153e53e0786e8fdf901a47dc0ba05.svg",
+    "static/media/reward.svg": "/static/media/reward.24941ac40165062dd141636785cad256.svg",
+    "static/media/twitter.svg": "/static/media/twitter.229a6dc8af66a46ca870493e2bfe8d86.svg",
+    "static/media/contacts_bg.svg": "/static/media/contacts_bg.8ccb9bbbcb10b2ddbc91.svg",
+    "static/media/medium.svg": "/static/media/medium.ba2b8d7a431ae1bf2306a6acaff12550.svg",
+    "index.html": "/index.html",
+    "static/media/arrow-r.svg": "/static/media/arrow-r.d05a174c5c3dbe5bf9eaeedb2513b1ba.svg",
+    "static/media/w2.svg": "/static/media/w2.8d3ac04b7e69328eb7e1bca2a0ff4821.svg",
+    "static/media/w3.svg": "/static/media/w3.7d787708cf679558628bea3937ae0dd1.svg",
+    "main.c2f4eaf4.css.map": "/static/css/main.c2f4eaf4.css.map",
+    "main.8a997273.js.map": "/static/js/main.8a997273.js.map",
+    "787.0f51b28a.chunk.js.map": "/static/js/787.0f51b28a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2f4eaf4.css",
+    "static/js/main.8a997273.js"
+  ]
+}
