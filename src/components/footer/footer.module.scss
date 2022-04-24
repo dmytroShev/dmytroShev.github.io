@@ -1,0 +1,19 @@
+.footer {
+  padding: 40px 0;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__links {
+      display: flex;
+      a {
+        display: flex;
+        align-items: center;
+        margin-left: 75px;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.socials {
+  span {
+    margin-right: 60px;
+  }
+
+  a {
+    display: flex;
+    margin: 0 25px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    fill: var(--accent);
+  }
+}

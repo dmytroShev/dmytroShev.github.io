@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Urbanist;
+  src: url('./assets/fonts/Urbanist-Medium.ttf');
+}
+
+@font-face {
+  font-family: Urbanist;
+  font-weight: 700;
+  src: url('./assets/fonts/Urbanist-Bold.ttf');
+}
+
+@font-face {
+  font-family: Urbanist;
+  font-weight: 900;
+  src: url('./assets/fonts/Urbanist-Black.ttf');
+}
+
+:root {
+  --bg: #002D46;
+  --text: #fff;
+  --text-d: #002940;
+  --accent: #6BE870;
+}
+
+body {
+  margin: 0;
+  font-family: Urbanist, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg) url("assets/images/noise.png");
+  font-size: 18px;
+  color: var(--text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: var(--text);
+  transition: color 0.3s;
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid var(--text);
+  box-sizing: border-box;
+  border-radius: 50px;
+  background-color: var(--bg);
+  color: var(--text);
+  width: 155px;
+  height: 40px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s, background-color .3s;
+
+  &:hover {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    color: var(--text-d);
+  }
+}
+

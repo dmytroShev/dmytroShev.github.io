@@ -1,0 +1,89 @@
+.subscription {
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: inline-flex;
+    align-items: center;
+    padding: 30px 43px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    -webkit-backdrop-filter: blur(32px);
+    backdrop-filter: blur(32px);
+    border-radius: 59px;
+
+    p {
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 30px 0 0;
+    }
+
+    &__input {
+      position: relative;
+
+      span {
+        position: absolute;
+        bottom: -20px;
+        left: 25px;
+        font-size: 12px;
+      }
+
+      input {
+        width: 273px;
+        background: var(--bg);
+        border-radius: 40px;
+        border: 1px solid transparent;
+        padding: 13px 60px 13px 25px;
+        outline: none;
+        color: var(--text);
+        font-size: 16px;
+        line-height: 16px;
+
+        &::placeholder {
+          color: var(--text);
+          opacity: .4;
+        }
+
+        &:focus, &:hover {
+          border: 1px solid var(--accent);
+        }
+      }
+
+      button {
+        color: #99ABB5;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60px;
+        height: 46px;
+        background: transparent url("../../assets/images/icons/arrow-r.svg") center no-repeat;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+
+      &__white {
+        input {
+          background: var(--text);
+          color: var(--text-d);
+
+          &::placeholder {
+            color: var(--text-d);
+            opacity: .4;
+          }
+        }
+
+        button{
+          color: var(--text-d);
+        }
+      }
+    }
+  }
+}
