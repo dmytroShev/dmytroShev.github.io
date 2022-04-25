@@ -1,4 +1,4 @@
-const DOMAIN = 'nearlend.io';
+const DOMAIN = 'omomo.finance';
 const NAME_LIST = `contact@${DOMAIN}`;
 
 const mailgun = require('mailgun-js')({
