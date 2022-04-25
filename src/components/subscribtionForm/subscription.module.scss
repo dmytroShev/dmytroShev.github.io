@@ -1,3 +1,5 @@
+@import "../../assets/styles/mixins";
+
 .subscription {
 
   &__title {
@@ -5,6 +7,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 30px;
+
+    @include desktop-small {
+      font-size: 26px;
+      line-height: 26px;
+      margin-bottom: 20px;
+    }
   }
 
   &__form {
@@ -22,6 +30,9 @@
       font-weight: 700;
       font-size: 24px;
       margin: 0 30px 0 0;
+      @include desktop-small {
+        font-size: 20px;
+      }
     }
 
     &__input {
@@ -39,11 +50,16 @@
         background: var(--bg);
         border-radius: 40px;
         border: 1px solid transparent;
-        padding: 13px 60px 13px 25px;
+        padding: 13px 55px 13px 25px;
         outline: none;
         color: var(--text);
         font-size: 16px;
         line-height: 16px;
+
+        @include desktop-small {
+          width: 230px;
+          padding: 10px 55px 10px 25px;
+        }
 
         &::placeholder {
           color: var(--text);

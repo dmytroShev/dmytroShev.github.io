@@ -1,4 +1,4 @@
-
+@import '../../assets/styles/mixins';
 
 .main {
 
@@ -11,10 +11,15 @@
       margin-top: 20px;
       background: url("../../assets/images/top-img.svg") top right no-repeat;
       padding-bottom: 285px;
+
+      @include desktop-small {
+        background-size: 580px;
+        padding-bottom: 210px;
+      }
     }
 
     &__info {
-      padding: 80px 0 130px;
+      padding: 20px 0 85px;
     }
 
     h1 {
@@ -22,9 +27,15 @@
       font-weight: 900;
       font-size: 64px;
       line-height: 110%;
+      @include desktop-small {
+        font-size: 48px;
+      }
     }
     &__logo {
       width: 287px;
+      @include desktop-small {
+        width: 230px;
+      }
     }
 
     &__bg {
@@ -36,11 +47,21 @@
 
   &__about {
     margin-bottom: 220px;
+
+    @include desktop-small {
+      margin-bottom: 140px;
+    }
+
     &__title {
       font-weight: 700;
       font-size: 64px;
       line-height: 64px;
       margin-bottom: 65px;
+      @include desktop-small {
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 40px;
+      }
     }
 
     &__row {
@@ -56,33 +77,68 @@
       border-top: 1px solid var(--border);
       border-left: 1px solid var(--border);
 
+      @include desktop-small {
+        padding: 55px;
+      }
+
+      img {
+        @include desktop-small {
+          max-width: 120px;
+        }
+      }
+
       h4 {
         font-weight: 700;
         font-size: 34px;
         line-height: 38px;
         margin-top: 10px;
         margin-bottom: 25px;
+
+        @include desktop-small {
+          font-size: 26px;
+          line-height: 26px;
+        }
       }
 
       p {
         font-size: 18px;
         line-height: 26px;
+
+        @include desktop-small {
+          font-size: 14px;
+          line-height: 21px;
+        }
       }
 
       &__info {
         margin-left: 75px;
         max-width: 408px;
+
+        @include desktop-small {
+          margin-left: 50px;
+        }
       }
     }
   }
 
   &__why {
     margin-bottom: 165px;
+
+    @include desktop-small {
+      margin-bottom: 140px;
+    }
+
     &__title {
       font-weight: 700;
       font-size: 64px;
       line-height: 64px;
       margin-bottom: 65px;
+
+      @include desktop-small {
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 40px;
+      }
     }
 
     &__list {
@@ -92,6 +148,7 @@
       &__item {
         padding: 40px 49px;
         display: flex;
+        align-items: center;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
         backdrop-filter: blur(32.8px);
         border-radius: 76px;
@@ -99,11 +156,22 @@
         border-top: 1px solid var(--border);
         border-left: 1px solid var(--border);
 
+        @include desktop-small {
+          padding: 30px 40px;
+          margin-bottom: 30px;
+        }
+
         &__img {
           display: flex;
           justify-content: center;
-          width: 61px;
+          max-width: 61px;
           margin-right: 68px;
+
+          @include desktop-small {
+            max-width: 51px;
+            max-height: 32px;
+            margin-right: 35px;
+          }
         }
 
         p {
@@ -111,6 +179,11 @@
           font-weight: 700;
           font-size: 34px;
           line-height: 39px;
+
+          @include desktop-small {
+            font-size: 26px;
+            line-height: 26px;
+          }
         }
       }
     }
@@ -118,6 +191,10 @@
 
   &__contact {
     margin-bottom: 180px;
+
+    @include desktop-small {
+      margin-bottom: 140px;
+    }
 
     &__block {
       padding: 75px;
@@ -128,21 +205,41 @@
       border-radius: 35px;
       border-top: 1px solid var(--border);
       border-left: 1px solid var(--border);
+      background-size: 455px;
+
+      @include desktop-small {
+        padding: 50px;
+      }
 
       h2 {
         margin: 0 0 10px;
         font-weight: 700;
         font-size: 64px;
+
+        @include desktop-small {
+          font-size: 48px;
+          line-height: 100%;
+        }
       }
 
       p {
         font-size: 18px;
         line-height: 26px;
         margin: 0 0 40px;
+
+        @include desktop-small {
+          font-size: 14px;
+          line-height: 21px;
+          margin: 0 0 32px;
+        }
       }
 
       &__socials {
         margin-bottom: 90px;
+
+        @include desktop-small {
+          margin-bottom: 60px;
+        }
       }
     }
   }
