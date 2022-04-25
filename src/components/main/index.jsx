@@ -9,11 +9,6 @@ import SubscriptionForm from "../subscribtionForm";
 import Socials from "../socials";
 
 const Main = () => {
-
-  const handleSubmit = () => {
-    console.log('submit')
-  }
-
   return (
     <main className={s.main}>
       <section className={s.main__top}>
@@ -24,7 +19,7 @@ const Main = () => {
                 on NEAR protocol</h1>
               <img src={Logo} alt="logo" className={s.main__top__logo} />
             </div>
-            <SubscriptionForm handleSubmit={handleSubmit} />
+            <SubscriptionForm />
           </div>
         </div>
       </section>
@@ -85,7 +80,7 @@ const Main = () => {
               <div className={s.main__contact__block__socials}>
                 <Socials />
               </div>
-              <SubscriptionForm handleSubmit={handleSubmit} isContact />
+              <SubscriptionForm isContact />
             </div>
           </div>
         </section>

@@ -62,9 +62,9 @@
         right: 0;
         top: 0;
         width: 60px;
-        height: 46px;
-        background: transparent url("../../assets/images/icons/arrow-r.svg") center no-repeat;
+        height: 48px;
         cursor: pointer;
+        background-color: transparent;
 
         &:hover {
           color: var(--accent);
@@ -84,6 +84,33 @@
 
         button{
           color: var(--text-d);
+        }
+      }
+      &__success {
+        input {
+          border-color: var(--accent);
+          color: var(--accent);
+        }
+
+        button{
+          color: var(--accent);
+        }
+      }
+      &__error {
+        input {
+          border-color: var(--error);
+          color: var(--error);
+          &:focus, &:hover {
+            border: 1px solid var(--error);
+          }
+        }
+
+        button, span {
+          color: var(--error);
+        }
+
+        button:hover {
+          color: var(--error);
         }
       }
     }
